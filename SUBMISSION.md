@@ -5,7 +5,7 @@
 Public repository link:
 
 ```text
-PASTE_GITHUB_REPOSITORY_LINK_HERE
+https://github.com/emreozdere45-max/Abdullah-Emre-zdere-karakter-animasyonu-projesi
 ```
 
 ## Screen Capture Video
@@ -13,14 +13,15 @@ PASTE_GITHUB_REPOSITORY_LINK_HERE
 Video link:
 
 ```text
-PASTE_VIDEO_LINK_HERE
+media/demo_video.mp4
 ```
 
-## Implemented Motion State
+## Implemented Motion States
 
-This project implements one active motion state:
+This project focuses on two kinematic locomotion states:
 
-- `Run`: the character is moved forward through the N8RO navigation API, while the C++ plugin outputs kinematic joint-angle overrides for a running-style motion.
+- `Walk`: slower procedural gait cycle.
+- `Run`: faster procedural gait cycle and the main demonstrated state in the GLB viewer.
 
 The model is kinematic only. It outputs joint angles and does not compute forces, torques, rigid-body dynamics, or contact physics.
 
@@ -47,8 +48,10 @@ The model controls these 10 joints:
 - `include/N8ROHumanMotionPlugin.h`: plugin interface.
 - `CMakeLists.txt`: build configuration.
 - `README.md`: build and integration notes.
+- `Documentation/REPORT_Abdullah_Emre_Ozdere.md`: project report written for this submission.
 - `missions/human_animation_loop.lua`: N8RO mission script used to request the running state and navigation target.
 - `dist/n8ro_human_motion_plugin.dll`: prebuilt plugin DLL for convenience.
+- `media/demo_video.mp4`: screen capture video of the character in the N8RO GLB viewer.
 
 ## Email Text
 
@@ -58,13 +61,13 @@ Dear Dr. Guclu,
 My N8RO Human Motion project submission is below.
 
 GitHub repository:
-PASTE_GITHUB_REPOSITORY_LINK_HERE
+https://github.com/emreozdere45-max/Abdullah-Emre-zdere-karakter-animasyonu-projesi
 
 Screen capture video:
-PASTE_VIDEO_LINK_HERE
+Included in the repository as media/demo_video.mp4
 
-Implemented motion state:
-The model implements a Run state. The character is moved forward through the N8RO navigation API, while a custom C++ animation plugin generates kinematic joint-angle overrides for a running-style motion.
+Implemented motion states:
+The model focuses on Walk and Run motion states. The character is moved forward through the N8RO navigation API, while a custom C++ animation plugin generates kinematic joint-angle overrides for walking/running-style motion. The final demonstration mainly shows the Run state because it produced the clearest visible result in the GLB viewer.
 
 Controlled joints:
 leftHip, leftKnee, leftAnkle, rightHip, rightKnee, rightAnkle, leftShoulder, leftElbow, rightShoulder, rightElbow.
@@ -72,5 +75,5 @@ leftHip, leftKnee, leftAnkle, rightHip, rightKnee, rightAnkle, leftShoulder, lef
 The model is kinematic only. It outputs joint angles and does not compute forces, torques, rigid-body dynamics, or contact physics.
 
 Best regards,
-YOUR_NAME
+Abdullah Emre Ozdere
 ```

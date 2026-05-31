@@ -79,6 +79,8 @@ Main source files:
 
 - `src/N8ROHumanMotionPlugin.cpp`
 - `include/N8ROHumanMotionPlugin.h`
+- `Documentation/REPORT_Abdullah_Emre_Ozdere.md`
+- `media/demo_video.mp4`
 
 The plugin generates joint angles in real time using sine-wave based procedural motion. The left and right legs are phase-shifted so that they do not move together.
 
