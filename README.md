@@ -41,6 +41,12 @@ The N8RO plugin DLL is generated here:
 build/Release/n8ro_human_motion_plugin.dll
 ```
 
+A prebuilt copy is included for convenience:
+
+```text
+dist/n8ro_human_motion_plugin.dll
+```
+
 It has also been deployed to the N8RO simulation plugin folder:
 
 ```text
@@ -48,6 +54,34 @@ C:\N8RO\userPlugins\sim\n8ro_human_motion_plugin.dll
 ```
 
 Restart N8RO after copying the plugin so the runtime can load it.
+
+## N8RO Local Setup
+
+Copy the prebuilt DLL from this repo:
+
+```text
+dist/n8ro_human_motion_plugin.dll
+```
+
+to:
+
+```text
+C:\N8RO\userPlugins\sim\n8ro_human_motion_plugin.dll
+```
+
+The mission script used for the demo is included at:
+
+```text
+missions/human_animation_loop.lua
+```
+
+Copy it to:
+
+```text
+C:\N8RO\data\resources\missions\human_animation_loop.lua
+```
+
+Then restart N8RO, load `GenericCivilianPresence`, start the simulation, and open the GLB viewer.
 
 ## Run the Demo
 

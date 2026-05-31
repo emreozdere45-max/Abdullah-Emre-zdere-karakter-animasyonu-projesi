@@ -47,7 +47,8 @@ The model controls these 10 joints:
 - `include/N8ROHumanMotionPlugin.h`: plugin interface.
 - `CMakeLists.txt`: build configuration.
 - `README.md`: build and integration notes.
-- `C:/N8RO/data/resources/missions/human_animation_loop.lua`: local N8RO mission script used to request the running state and navigation target.
+- `missions/human_animation_loop.lua`: N8RO mission script used to request the running state and navigation target.
+- `dist/n8ro_human_motion_plugin.dll`: prebuilt plugin DLL for convenience.
 
 ## Email Text
 
